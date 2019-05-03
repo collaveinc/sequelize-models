@@ -1,7 +1,7 @@
 {
-  "name": "@collaveinc/sequelize-pg-models",
+  "name": "@collaveinc/sequelize-models",
   "version": "1.0.0",
-  "description": "Specialized and opinionated model structure for PostgreSQL and Sequelize.",
+  "description": "Opinionated folder and model structure for Sequelize.",
   "main": "index.js",
   "scripts": {
     "compile": "coffee --compile --output lib src",

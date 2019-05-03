@@ -16,4 +16,4 @@ do ->
       console.log "-- Defining model: #{name}"
       return TestModel
 
-  await sqModels sequelize, 'tests/sequelize-pg-models'
+  await sqModels sequelize, 'tests/sequelize-models'
