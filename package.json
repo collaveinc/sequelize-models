@@ -2,7 +2,7 @@
   "name": "@collaveinc/sequelize-models",
   "version": "1.0.0",
   "description": "Opinionated folder and model structure for Sequelize.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "compile": "coffee --compile --output lib src",
     "dev": "coffee tests/index.coffee",
