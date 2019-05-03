@@ -1,0 +1,23 @@
+{
+  "name": "@collaveinc/sequelize-pg-models",
+  "version": "1.0.0",
+  "description": "Specialized and opinionated model structure for PostgreSQL and Sequelize.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "coffee --compile --output lib src",
+    "dev": "coffee tests/index.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Alegre (andrew.alegre@collave.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@collaveinc/folder-to-object": "^1.0.2",
+    "humps": "^2.0.1",
+    "lodash": "^4.17.11",
+    "pluralize": "^7.0.0"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.4.1",
+    "sequelize": "^5.8.2"
+  }
+}
