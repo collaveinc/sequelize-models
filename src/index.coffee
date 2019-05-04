@@ -1,6 +1,7 @@
 
 folderToObject = require '@collaveinc/folder-to-object'
 generateModels = require './generateModels'
+{ decamelize } = require 'humps'
 _ = require 'lodash'
 
 module.exports = (sequelize, cwd) ->
