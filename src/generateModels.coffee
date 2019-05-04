@@ -12,7 +12,11 @@ extendModel = (model) ->
   # association helper
   model.associateWith = (models, method, content) ->
     return unless content
-    if _.isString content
+    if _.isArray content
+      for value in content
+        @associateWith models, method, value
+
+    else if _.isString content
       [other, alias, key, targetKey] = content.split ':'
       otherModel = if other is '_' then @ else models[other]
       @[method] models[other],
@@ -24,9 +28,6 @@ extendModel = (model) ->
       content.model = if not content.model or content.model is '_' then @ else models[content.model]
       @[method] models[other], content
 
-    else if _.isArray content
-      for value in content
-        @associateWith method, models, value
 
 createModels = (sequelize, modules) ->
   models = {}

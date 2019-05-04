@@ -1,6 +1,6 @@
 {
   "name": "@collaveinc/sequelize-models",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Opinionated folder and model structure for Sequelize.",
   "main": "lib/index.js",
   "scripts": {
@@ -14,6 +14,8 @@
     "@collaveinc/folder-to-object": "^1.0.2",
     "humps": "^2.0.1",
     "lodash": "^4.17.11",
+    "pg": "^7.10.0",
+    "pg-promise": "^8.6.5",
     "pluralize": "^7.0.0"
   },
   "devDependencies": {
